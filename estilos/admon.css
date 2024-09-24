@@ -23,15 +23,16 @@
     align-items: center; /*Centrar verticalmente los elementos*/
     justify-content: center; /*Centrar horizontalmente los elementos*/
     font-weight: bold; /*Texto en negrita*/
-    
 } 
 
-.logo p{
-    float: left;
+.logo texto-logo{
+    display: flex;
+    justify-content: left;
 }
- .logo img{
-    text-align: right;
- }
+
+.logo img{
+    float: right;
+}
 
 .navegacion ul{
     list-style: none; /*Eliminar los puntos de la litas*/
@@ -66,56 +67,9 @@
     background-color: #e0e2e2;
 }
 /*Estilos secciones main - secciones*/
-.section{
-    display: inline-block;
-    width: 40%;
-}
-
-.searchcat-section{
-    background-color: #e0e2e2; /*Color de fondo del placeholder definido*/
-    display: flex;
-}
-.image-placeholder{
-    flex: 0;
-    padding: 30px; /*Espacio interior placeholder*/
-    margin-top: 25px; /*<margen inferior del placeholder*/
-}
-
-.texto-buscar{
-    font-size: 10px;
-    font-weight: bold;
-}
-
-.WhoIam-section{
-    background-color: #CC99FF;
-    padding: 30px; /*Espacio entre secciones*/
-    margin: 20px; /*Márgenes de forma horizontal dentro del recuadro del contenedor*/
-    width: 30%; /*Ancho de la sección.  Contenedor 90% de la página*/
-    height: 300px;
-    border: 2px solid #92B1A5; /*color de los 4 bordes*/
-    text-align: left; /*Centrado del texto*/
-}
 
 
-h1{
-    font-size: 15px;
-    font-family: sans-serif;
-}
 
-h2{
-    font-size: small;
-    font-family: 'Lucida Sans';
-}
-
-.friends-section{
-    background-color: #FFCCFF;
-    padding: 30px; /*Espacio entre secciones*/
-    margin: 20px; /*Márgenes de forma horizontal dentro del recuadro del contenedor*/
-    width: 700px; /*Ancho de la sección*/
-    height: 200px; /*Alto de la sección*/
-    border: 2px solid #92B1A5; /*color de los 4 bordes*/
-    text-align: left; /*Centrado del texto*/
-}
 
 /*Estilos Footer*/
 .container-footer {
