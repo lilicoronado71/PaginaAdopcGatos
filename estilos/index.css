@@ -7,31 +7,26 @@
 }
 
 /*Estilos para el header*/
-.header{
-    background-color: #e0e2e2; /*Color del fondo del header*/
-    padding: 20px; /*Espacio en el interior del header*/
-    text-align: center; /*Centra el texto del contenido del header*/
-    border-bottom: 2px solid #92B1A5; /*Borde al interior del header*/
-    position: relative; /*Establece la posición de los elementos del header*/
+.header-container {
+    display: flex; /*Convertimos al menú en flexbox*/
+    justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
+    align-items: center; /*con esto alineamos de manera vertical*/
+    background-color:  #CC99FF;
+    height: 100px;
 }
-
 .logo{
-    width: 100%; /*ancho del logo*/
-    height: 106px;  /* alto del logo */
-    background-color: #9999FF; /*Color fondo del logo*/
-    display: flex; /*Usa Flexbox para alinear elementos*/
-    align-items: center; /*Centrar verticalmente los elementos*/
-    justify-content: center; /*Centrar horizontalmente los elementos*/
-    font-weight: bold; /*Texto en negrita*/
-    
-} 
-
-.logo p{
-    float: left;
+    width:50%; 
+    display:inline-block; 
+    align-content: end;
 }
- .logo img{
-    text-align: right;
- }
+.texto{
+    width:50%; 
+    display:inline-block; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font:bolder;
+    text-align: end;
+}
 
 .navegacion ul{
     list-style: none; /*Eliminar los puntos de la litas*/
