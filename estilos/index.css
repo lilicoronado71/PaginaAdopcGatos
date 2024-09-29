@@ -64,52 +64,81 @@
 .section{
     display: inline-block;
     width: 40%;
+    flex-wrap: wrap;
 }
-
+/*Sección de Búsqueda de gatos*/
 .searchcat-section{
-    background-color: #e0e2e2; /*Color de fondo del placeholder definido*/
     display: flex;
+    padding: 20px; /*Espacio interior placeholder*/
+    margin-top: 25px; /*<margen inferior del placeholder*/ 
+    gap: 10px;
 }
-.image-placeholder{
-    flex: 0;
-    padding: 30px; /*Espacio interior placeholder*/
-    margin-top: 25px; /*<margen inferior del placeholder*/
+.searchCat-list{
+    margin-top: 5px; 
+    font-size:xx-large;
 }
-
-.texto-buscar{
+.searchCat-search{  
+    margin-top: 20px; 
     font-size: 10px;
     font-weight: bold;
 }
+/*Secciones: Quiénes Somos, Amigos Causas y Nuevas Familias*/
+.section-container{
+    display: flex;
+    gap: 20px;
+}
+/*Título de cada sección*/
+h1{
+    font-size: 30px;
+    font-family: sans-serif;
+}
 
-.WhoIam-section{
+/*Sección Quiénes Somos*/
+.WhoIam-section{    
     background-color: #CC99FF;
     padding: 30px; /*Espacio entre secciones*/
     margin: 20px; /*Márgenes de forma horizontal dentro del recuadro del contenedor*/
     width: 30%; /*Ancho de la sección.  Contenedor 90% de la página*/
-    height: 300px;
     border: 2px solid #92B1A5; /*color de los 4 bordes*/
     text-align: left; /*Centrado del texto*/
+    overflow: auto
 }
-
-
-h1{
-    font-size: 15px;
-    font-family: sans-serif;
+/*Contenedor secciones derecha*/
+.rigth-container{
+    width: 70%;
 }
-
-h2{
-    font-size: small;
+.rigth-container li{
+    font-size:medium;
     font-family: 'Lucida Sans';
 }
-
+/*Sección Amigos Causa*/
 .friends-section{
     background-color: #FFCCFF;
+    align-self: flex-start;
     padding: 30px; /*Espacio entre secciones*/
     margin: 20px; /*Márgenes de forma horizontal dentro del recuadro del contenedor*/
-    width: 700px; /*Ancho de la sección*/
     height: 200px; /*Alto de la sección*/
     border: 2px solid #92B1A5; /*color de los 4 bordes*/
     text-align: left; /*Centrado del texto*/
+    overflow: auto
+}
+/*Sección Nuevas Familias*/
+.newFamily-section{
+    background-color: #FFCCFF;
+    align-self: flex-start;
+    padding: 30px; /*Espacio entre secciones*/
+    margin: 20px; /*Márgenes de forma horizontal dentro del recuadro del contenedor*/
+    height: 200px; /*Alto de la sección*/
+    border: 2px solid #92B1A5; /*color de los 4 bordes*/
+    text-align: left; /*Centrado del texto*/
+    overflow: auto
+}
+/*Texto contenido de cada article*/
+article p{
+    margin-top: 10px;
+    font-size:medium;
+    font-family: 'Lucida Sans';
+    text-align: justify;
 }
 
 /*Estilos Footer*/

@@ -14,10 +14,10 @@
             <header class="header">
                 <div class="header-container">
                     <div class="logo"><img src="imagenes/Gaticos_3.jpg" alt="ImagenGatos"></div>
-                    <div class="texto"><p>Looking Cats For Family</p></div>                        
+                    <div class="texto"><H2>Looking Cats For Family</H2></div>                        
                 </div>
                 <!--Botón para cuando la pantalla sea pequeña-->
-                <button class="menu-button" onclick="toogleMenu()">☰ Menú</button><!--Menú hamburguesa-->
+                
             </header>
             <!--Navegación princial-->
             <nav class="navegacion">
@@ -28,35 +28,64 @@
                     <li><a href="#">NUEVAS FAMILIAS</a></li>
                     <li><a href="#">ADMINISTRACION</a></li>
                 </ul>
+                <button class="menu-button" onclick="toogleMenu()">☰ Menú</button><!--Menú hamburguesa-->
             </nav>  
             
             <!--Contenido de la pagina principal-->
-            <main>                           
+            <main>
+                <!--Seccion Búsqueda de gatos-->                        
                 <section class="section searchcat-section">
                     <!--Sección imagen y campo lista para búwsqueda de gatos por raza-->
-                    <div class="image-placeholder">
+                    <div class="searchCat-image">
                         <img src="imagenes/caritas_gatos.jpg" alt="img-buscar-gato">                    
                     </div>
-                    <div class="image-placeholder">
+                    <div class="searchCat-list">
                         <input type="list" class="list-Type-cat" size="50">                  
                     </div>
-                    <div class="image-placeholder">
-                        <p class="texto-buscar">Buscar mi gatico</p>                    
+                    <div class="searchCat-search">
+                        <button type="button" id="searchCat" onclick=catList()>Buscar mi gatico!!</button>
+                        <script src="scripts/index.js"></script>
                     </div>
                 </section> 
 
-                <section class="WhoIam-section">
-                    <h1>Quienes Somos</h1>
-                    <h2>Somos una organización sin animos de lucro, somos amantes de los gatos y nos gusta cuidarlos. 
-                        Recibimos gaticos sin familia, los cuidamos, los curamos y los amamos. Si tú estás interesado 
-                        en adoptar uno o más gaticos, ven a visitarnos. Si das clic en "Buscar mi gatico" encontrarás 
-                        gaticos por su raza, encontrarás fotos e información de cada gatico para que te enamores y 
-                        escojas tue nuevo amigo.</h2>
-                </section>
-
-                <section class="section friends-section">
-                    <h1>Aporte Amigos Causa</h1>
-                    <h2>Gracias a los amigos que nos ayudan con sus aportes en el cuidado de nuestros gaticos:</h2>
+                <!--Secciones: Quiénes Somos, Amigos Causas y Nuevas Familias-->
+                <section class="section-container">
+                    <section class="WhoIam-section">
+                        <h1>Quiénes Somos</h1>
+                        <article>
+                            <p>Somos una organización sin animos de lucro, somos amantes de los gatos y nos gusta cuidarlos. 
+                            Recibimos gaticos sin familia, los cuidamos, los curamos y los amamos. Si tú estás interesado 
+                            en adoptar uno o más gaticos, ven a visitarnos. Si das clic en "Buscar mi gatico" encontrarás 
+                            gaticos por su raza, encontrarás fotos e información de cada gatico para que te enamores y 
+                            escojas tue nuevo amigo.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="rigth-container">
+                        <section class="friends-section">
+                            <h1>Aporte Amigos Causa</h1>
+                            <article>
+                                <p>Gracias a los amigos que nos ayudan con sus aportes para el cuidado de nuestros gaticos:
+                                    <p>
+                                        <ul>
+                                            <li>- Familia Rodríguez Meza:  De Chía nos colaboró con 5 bultos de arena</li>
+                                            <li>- Familia Beltrán Coronado: De Cota nos colaboró con 10 bultos de comida para gatos adultos</li>
+                                            <li>- Familia Jiménes Contreras: De Funza nos colaboró con 3 bultos de comida para gatitos</li>
+                                        </ul>
+                                    </p>
+                                </p>
+                            </article>
+                        </section>
+                        <section class="newFamily-section">
+                            <h1>Gaticos Y Sus Nuevas Familias</h1>
+                            <article>
+                                <p>Conoce algunas de las familias, amantes de gatos que se animaron a adoptar un nuevo miembro, 
+                                    te mostramos algunas fotos que nos han hecho llegar estas nuevas familias.
+                                </p>
+                                    <a href="#">Da clic acá para ver las fotos</a>                                
+                            </article>
+                        </section>
+                    </section>
                 </section>
             </main>
 
@@ -78,8 +107,8 @@
                         </div>
                         <div class="col-1">
                             <h3>Contacto</h3>
-                            <p>e-mail: info@lookingforfamilycatas.com</p>
-                            <p>Teléfono: 01800lookcat</p>
+                            <p>e-mail: info@lookingforfamilycats.com</p>
+                            <p>Teléfono: 018000lookcat</p>
                         </div>
                         <div class="col-1">
                             <h3>Derechos de autor</h3>
