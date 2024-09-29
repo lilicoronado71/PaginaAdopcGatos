@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Hace que la pagina sea "responsive" en dispositivos móviles-->
-        <link rel="stylesheet" href="estilos/index.css">
+        <link rel="stylesheet" href="estilos/gaticos.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <title>Looking Cats For Family</title>
     </head>
@@ -22,17 +22,35 @@
             <!--Navegación princial-->
             <nav class="navegacion">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <!--<li><a href="#">GATICOS</a></li>-->             
-                    <li><a href="#">REGISTRO ADOPTANTES</a></li>
-                    <li><a href="#">NUEVAS FAMILIAS</a></li>
-                    <li><a href="#">ADMINISTRACION</a></li>
+                    <li><a href="http://localhost:3000/index.html">INICIO</a></li>
+                    <!--<li><a href="http://localhost:3000/gaticos.html">GATICOS</a></li>-->              
+                    <li><a href="http://localhost:3000/regAdopt.html">REGISTRO ADOPTANTES</a></li>
+                    <li><a href="http://localhost:3000/nuevaFami.html">NUEVAS FAMILIAS</a></li>
+                    <li><a href="http://localhost:3000/admon.html">ADMINISTRACION</a></li>
                 </ul>
                 <button class="menu-button" onclick="toogleMenu()">☰ Menú</button><!--Menú hamburguesa-->
             </nav>  
             
             <!--Contenido de la pagina principal-->
             <main>
+                            <!--Contenido de la pagina principal-->
+            <main>
+                <!--Seccion Búsqueda de gatos-->                        
+                <section class="section searchcat-section">
+                    <!--Sección imagen y campo lista para búwsqueda de gatos por raza-->
+                    <div class="searchCat-image">
+                        <img src="imagenes/caritas_gatos.jpg" alt="img-buscar-gato">                    
+                    </div>
+                    <div class="searchCat-list">
+                        <input type="list" class="list-Type-cat" size="50">                  
+                    </div>
+                    <div class="searchCat-search">
+                        <button type="button" id="searchCat" onclick=catList()>Buscar mi gatico!!</button>
+                        <script src="scripts/index.js"></script>
+                    </div>
+                </section> 
+                
+
                 
             </main>
 

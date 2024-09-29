@@ -60,6 +60,31 @@
 .body{
     background-color: #e0e2e2;
 }
+/*Estilos secciones main - secciones*/
+.section{
+    display: inline-block;
+    width: 40%;
+    flex-wrap: wrap;
+}
+/*Sección de Búsqueda de gatos*/
+.searchcat-section{
+    display: flex;
+    padding: 20px; /*Espacio interior placeholder*/
+    margin-top: 25px; /*<margen inferior del placeholder*/ 
+    gap: 10px;
+}
+.searchCat-list{
+    margin-top: 5px; 
+    font-size:xx-large;
+}
+.searchCat-search{  
+    margin-top: 20px; 
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
 
 /*Estilos Footer*/
 .container-footer {
