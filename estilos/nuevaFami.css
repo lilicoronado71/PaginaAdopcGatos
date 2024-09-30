@@ -56,10 +56,35 @@
     cursor: pointer; /*Para que aparezca mano cuando pase el mouse sobre el menú*/
     margin-top: 10px; /*Margen superior*/
 }
-
+/*Contenido cuerpo de la página*/
 .body{
     background-color: #e0e2e2;
 }
+.contenedor-newFamily{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.newfamily{
+    border-radius: 10px;
+    height: 300px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    width: 30%;
+}
+.newfamily .infoFamily{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 /*Estilos Footer*/
 .container-footer {
