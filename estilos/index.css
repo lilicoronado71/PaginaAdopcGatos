@@ -11,21 +11,21 @@
     display: flex; /*Convertimos al menú en flexbox*/
     justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
     align-items: center; /*con esto alineamos de manera vertical*/
-    background-color:  #CC99FF;
-    height: 100px;
+    background-color:  #CC99FF; /*Color de fondo*/
+    height: 100px; /*Altura del contenedor*/
 }
 .logo{
-    width:50%; 
-    display:inline-block; 
-    align-content: end;
+    width:50%; /*Configura el ancho de un elemento*/
+    display:inline-block; /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+    align-content: end; /*Propiedad para asignar la alineación horizontal de un texto*/
 }
 .texto{
-    width:50%; 
-    display:inline-block; 
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
-    font:bolder;
-    text-align: end;
+    width:50%; /*Configura el ancho de un elemento*/
+    display:inline-block; /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+    font-family: 'Courier New', Courier, monospace; /*Tipo de fuente*/
+    font-size: larger; /*Tamaño de la fuente*/
+    font:bolder; /*Negrilla*/
+    text-align: end; /*Propiedad para asignar la alineación horizontal de un texto*/
 }
 
 .navegacion ul{
@@ -58,138 +58,137 @@
 }
 
 .body{
-    background-color: #e0e2e2;
+    background-color: #e0e2e2; /*Color fondo de la navegación*/
 }
 /*Estilos secciones main - secciones*/
 .section{
-    display: inline-block;
-    width: 40%;
-    flex-wrap: wrap;
+    display: inline-block;  /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+    width: 40%; /*Configura el ancho de un elemento*/
+    flex-wrap: wrap; /*especifica si los elementos flexibles deben ajustarse o no*/
 }
 /*Sección de Búsqueda de gatos*/
 .searchcat-section{
-    display: flex;
+    display: flex; /*Usa Flexbox para alinear elementos para temas de responsive*/
     padding: 20px; /*Espacio interior placeholder*/
     margin-top: 25px; /*<margen inferior del placeholder*/ 
-    gap: 10px;
+    gap: 10px; /*Define el tamaño del espacio entre las filas y entre las columnas en flexbox*/
 }
 .searchCat-list{
-    margin-top: 5px; 
-    font-size:xx-large;
+    margin-top: 5px; /*Define margen superior*/
+    font-size:xx-large; /*Tamaño de la fuente*/
 }
 .searchCat-search{  
-    margin-top: 20px; 
-    font-size: 10px;
-    font-weight: bold;
+    margin-top: 20px;  /*Define margen superior*/
+    font-size: 10px;  /*Tamaño de la fuente*/
+    font-weight: bold;  /*Negrilla*/
 }
 /*Secciones: Quiénes Somos, Amigos Causas y Nuevas Familias*/
 .section-container{
-    display: flex;
-    gap: 20px;
+    display: flex; /*Usa Flexbox para alinear elementos para temas de responsive*/
+    gap: 20px; /*Define el tamaño del espacio entre las filas y entre las columnas en flexbox*/
 }
 /*Título de cada sección*/
 h1{
-    font-size: 30px;
-    font-family: sans-serif;
+    font-size: 30px; /*Tamaño de la fuente*/
+    font-family: sans-serif; /*Tipo de letra*/
 }
 
 /*Sección Quiénes Somos*/
 .WhoIam-section{    
-    background-color: #CC99FF;
+    background-color: #CC99FF;  /*Color de fondo*/
     padding: 30px; /*Espacio entre secciones*/
     margin: 20px; /*Márgenes de forma horizontal dentro del recuadro del contenedor*/
     width: 30%; /*Ancho de la sección.  Contenedor 90% de la página*/
     border: 2px solid #92B1A5; /*color de los 4 bordes*/
     text-align: left; /*Centrado del texto*/
-    overflow: auto
+    overflow: auto; /*especifica qué debería suceder si el contenido desborda el cuadro de un elemento*/
 }
 /*Contenedor secciones derecha*/
 .rigth-container{
-    width: 70%;
+    width: 70%;  /*Ancho del contenedor*/
 }
 .rigth-container li{
-    font-size:medium;
-    font-family: 'Lucida Sans';
+    font-size:medium;  /*Tamaño de la letra*/
+    font-family: 'Lucida Sans'; /*Tipo de letra o fuente*/
 }
 /*Sección Amigos Causa*/
 .friends-section{
-    background-color: #FFCCFF;
-    align-self: flex-start;
+    background-color: #FFCCFF; /*Color de fondo*/
+    align-self: flex-start; 
     padding: 30px; /*Espacio entre secciones*/
     margin: 20px; /*Márgenes de forma horizontal dentro del recuadro del contenedor*/
     height: 200px; /*Alto de la sección*/
     border: 2px solid #92B1A5; /*color de los 4 bordes*/
     text-align: left; /*Centrado del texto*/
-    overflow: auto
+    overflow: auto; /*especifica qué debería suceder si el contenido desborda el cuadro de un elemento*/
 }
 /*Sección Nuevas Familias*/
 .newFamily-section{
     background-color: #FFCCFF;
-    align-self: flex-start;
+    align-self: flex-start; /*Elemento se coloca al principio del contenedor.*/
     padding: 30px; /*Espacio entre secciones*/
     margin: 20px; /*Márgenes de forma horizontal dentro del recuadro del contenedor*/
     height: 200px; /*Alto de la sección*/
     border: 2px solid #92B1A5; /*color de los 4 bordes*/
     text-align: left; /*Centrado del texto*/
-    overflow: auto
+    overflow: auto; /*especifica qué debería suceder si el contenido desborda el cuadro de un elemento*/
 }
 /*Texto contenido de cada article*/
 article p{
-    margin-top: 10px;
-    font-size:medium;
-    font-family: 'Lucida Sans';
-    text-align: justify;
+    margin-top: 10px;  /*Margen superior*/
+    font-size:medium;  /*Tamaño de la fuente*/
+    font-family: 'Lucida Sans';  /*Tipo de fuente*/
+    text-align: justify;  /*Alineación del texto*/
 }
 
 /*Estilos Footer*/
 .container-footer {
-    max-width: 1170px;
-    margin:auto;
+    max-width: 1170px; /*establece el ancho máximo de un elemento*/
+    margin:auto; /*centra horizontalmente el elemento dentro de su contenedor*/
 }
 
 .row{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /*Usa Flexbox para alinear elementos para temas de responsive*/
+    flex-wrap: wrap;  /*especifica si los elementos flexibles deben ajustarse o no*/
 }
 
 ul{
-    list-style: none;
+    list-style: none; /*establecer todas las propiedades de la lista en una declaración*/
 }
 
 .footer{
     background-color: #9999FF; /*color de fondo*/
-    padding: 70px 0;
+    padding: 70px 0; /*se utiliza para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido*/
 }
 
 .col-1{
-    width: 30%;
-    padding: 0 15px;
+    width: 30%; /*Configura el ancho de un elemento*/
+    padding: 0 15px; /*se utiliza para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido*/
 }
 
 .col-1 h3{
-   font-size: 18px;
-   color: black;
-   text-transform: capitalize;
-   margin-bottom: 35px;
-   font-weight: 500;
-   position: relative;
-}
-
-.col-1 .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
-}
-
-.footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
-}
-  
+    font-size: 18px;  /*Tamaño de la fuente*/
+    color: black;  /*Color*/
+    text-transform: capitalize; /*controla el uso de mayúsculas en el texto*/
+    margin-bottom: 35px;  /*Establece el margen inferior para un elemento en pixeles*/
+    font-weight: 500;  /*establece qué tan gruesos o finos deben mostrarse los caracteres del texto*/
+    position: relative; /*especifica el tipo de método de posicionamiento utilizado para un elemento*/
+ }
+ .col-1 .social-links a{
+     display: inline-block;  /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+     height: 40px;  /*Configura el alto de un elemento*/
+     width: 40px;  /*Configura el ancho de un elemento*/
+     background-color: rgba(255,255,255,0.2);  /*color de fondo*/
+     margin:0 10px 10px 0; /*Crea espacios alrededor de los elementos, fuera de los bordes definidos.*/
+     text-align: center; /*Especifica la alineación horizontal del texto en un elemento*/
+     line-height: 40px;  /*Especifica la altura de una línea*/
+     border-radius: 50%; /*permite agregar esquinas redondeadas a los elementos*/
+     color: #ffffff;  /*Color*/
+     transition: all 0.5s ease;  /*Permite cambiar los valores de las propiedades sin problemas, durante un período determinado*/
+ }
+ .footer-col .social-links a:hover{
+     color: #24262b;  /*Color letra*/
+     background-color: #ffffff; /*Color de fondo*/
+ }
+   
+ 

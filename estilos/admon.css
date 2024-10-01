@@ -11,21 +11,21 @@
     display: flex; /*Convertimos al menú en flexbox*/
     justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
     align-items: center; /*con esto alineamos de manera vertical*/
-    background-color:  #CC99FF;
-    height: 100px;
+    background-color:  #CC99FF; /*Color de fondo*/
+    height: 100px; /*Altura del contenedor*/
 }
 .logo{
-    width:50%; 
-    display:inline-block; 
-    align-content: end;
+    width:50%; /*Configura el ancho de un elemento*/
+    display:inline-block; /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+    align-content: end; /*Propiedad para asignar la alineación horizontal de un texto*/
 }
 .texto{
-    width:50%; 
-    display:inline-block; 
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
-    font:bolder;
-    text-align: end;
+    width:50%; /*Configura el ancho de un elemento*/
+    display:inline-block; /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+    font-family: 'Courier New', Courier, monospace; /*Tipo de fuente*/
+    font-size: larger; /*Tamaño de la fuente*/
+    font:bolder; /*Negrilla*/
+    text-align: end; /*Propiedad para asignar la alineación horizontal de un texto*/
 }
 
 .navegacion ul{
@@ -58,58 +58,51 @@
 }
 
 .body{
-    background-color: #e0e2e2;
+    background-color: #e0e2e2; /*Color fondo de la navegación*/
 }
 
 /*Estilos Footer*/
 .container-footer {
-    max-width: 1170px;
-    margin:auto;
+    max-width: 1170px; /*establece el ancho máximo de un elemento*/
+    margin:auto; /*centra horizontalmente el elemento dentro de su contenedor*/
 }
-
 .row{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;  /*Usa Flexbox para alinear elementos para temas de responsive*/
+    flex-wrap: wrap;  /*especifica si los elementos flexibles deben ajustarse o no*/
 }
-
 ul{
-    list-style: none;
+    list-style: none; /*establecer todas las propiedades de la lista en una declaración*/
 }
-
 .footer{
     background-color: #9999FF; /*color de fondo*/
-    padding: 70px 0;
+    padding: 70px 0; /*se utiliza para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido*/
 }
-
 .col-1{
-    width: 30%;
-    padding: 0 15px;
+    width: 30%; /*Configura el ancho de un elemento*/
+    padding: 0 15px; /*se utiliza para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido*/
 }
-
 .col-1 h3{
-   font-size: 18px;
-   color: black;
-   text-transform: capitalize;
-   margin-bottom: 35px;
-   font-weight: 500;
-   position: relative;
+   font-size: 18px;  /*Tamaño de la fuente*/
+   color: black;  /*Color*/
+   text-transform: capitalize; /*controla el uso de mayúsculas en el texto*/
+   margin-bottom: 35px;  /*Establece el margen inferior para un elemento en pixeles*/
+   font-weight: 500;  /*establece qué tan gruesos o finos deben mostrarse los caracteres del texto*/
+   position: relative; /*especifica el tipo de método de posicionamiento utilizado para un elemento*/
 }
-
 .col-1 .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
+    display: inline-block;  /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+    height: 40px;  /*Configura el alto de un elemento*/
+    width: 40px;  /*Configura el ancho de un elemento*/
+    background-color: rgba(255,255,255,0.2);  /*color de fondo*/
+    margin:0 10px 10px 0; /*Crea espacios alrededor de los elementos, fuera de los bordes definidos.*/
+    text-align: center; /*Especifica la alineación horizontal del texto en un elemento*/
+    line-height: 40px;  /*Especifica la altura de una línea*/
+    border-radius: 50%; /*permite agregar esquinas redondeadas a los elementos*/
+    color: #ffffff;  /*Color*/
+    transition: all 0.5s ease;  /*Permite cambiar los valores de las propiedades sin problemas, durante un período determinado*/
 }
-
 .footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
+    color: #24262b;  /*Color letra*/
+    background-color: #ffffff; /*Color de fondo*/
 }
   
