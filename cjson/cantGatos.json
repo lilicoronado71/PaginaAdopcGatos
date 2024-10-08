@@ -1,0 +1,62 @@
+{
+    "totalGatos":49,
+    "listaGatos":[
+        {
+            "raza":"Africano Doméstico",
+            "cantidad":2
+        },
+        {
+            "raza":"Angorao",
+            "cantidad":5
+        },
+        {
+            "raza":"Azul Ruso",
+            "cantidad":1
+        },
+        {
+            "raza":"Balinés",
+            "cantidad":2
+        }, {
+            "raza":"Bombay",
+            "cantidad":10
+        },
+        {
+            "raza":"Bosque de Siberia",
+            "cantidad":1
+        },
+        {
+            "raza":"Burmilla",
+            "cantidad":2
+        },
+        {
+            "raza":"Calico",
+            "cantidad":3
+        },
+        {
+            "raza":"Carey",
+            "cantidad":3
+        },
+        {
+            "raza":"Criollo",
+            "cantidad":7
+        },
+        {
+            "raza":"German Rex",
+            "cantidad":1
+        },
+        {
+            "raza":"Leopardo Doméstico",
+            "cantidad":1
+        },
+        {
+            "raza":"Persa de Pelo Negro",
+            "cantidad":4
+        },
+        {
+            "raza":"Tabbyo",
+            "cantidad":7
+        }
+    ]
+
+   
+}

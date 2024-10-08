@@ -1,0 +1,46 @@
+{
+    "listaGatos": [
+        {
+            "nombGato":"Tom",
+            "raza":"Calico",
+            "edad":"1",
+            "madurez":"Joven",
+            "colorPelaje":["blanco","negro","naranja"],
+            "sexo":"M",
+            "esterilizado":"Si",
+            "origen":"Calle",
+            "vacunas":"",
+            "estadoSalud":"Sano",
+            "marcas":"Ninguna",
+            "fotoGato":""
+        },
+        {
+            "nombGato":"Filomena",
+            "raza":"Calico",
+            "edad":"3",
+            "madurez":"Adulto",
+            "colorPelaje":["blanco","negro","naranja"],
+            "sexo":"H",
+            "esterilizado":"No",
+            "origen":"Entregado",
+            "vacunas":"",
+            "estadoSalud":"Crítico",
+            "marcas":"Falta pata derecha trasera",
+            "fotoGato":""
+        },
+        {
+            "nombGato":"Luna",
+            "raza":"Criollo",
+            "edad":"5",
+            "madurez":"Adulto",
+            "colorPelaje":["negro","blanco"],
+            "sexo":"H",
+            "esterilizado":"Si",
+            "origen":"Abandonado",
+            "vacunas":"",
+            "estadoSalud":"Enfermo",
+            "marcas":"Ninguna",
+            "fotoGato":""
+        }
+    ]
+}

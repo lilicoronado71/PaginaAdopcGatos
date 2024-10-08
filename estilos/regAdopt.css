@@ -4,6 +4,7 @@
     padding: 0; /*Elimina los rellenos predestinados*/
     box-sizing: border-box; /* Incluye borders y rellenos en el tamaño de los elementos*/
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Fuente predeterminada*/
+    text-decoration: none; /*especifica la decoración agregada al texto y es una propiedad abreviada*/
 }
 
 /*Estilos para el header*/
@@ -61,8 +62,111 @@
     background-color: #e0e2e2;
 }
 
+main{
+    width: 100%; /*Tamaño de 100% de la paágina*/
+    padding: 20px; /**/
+    margin: auto; /*Para que centre*/
+    margin-top: 5px; /*Baje el contenido*/
+}
+.contendedor__todo{
+    width: 100%; /*ancho de la página*/
+    max-width: 800px; /*Ancho máximo*/
+    margin: auto; /*Para que el contenedor se mantenga centrado*/
+    position: relative; /*Se van configurar posiciones aboslutas y se requiere para que estos elementos se relacionen en cuanto al contenedor*/
+}
+.caja__trasera{
+    width: 100%; /*ancho de la página*/
+    padding: 10px 20px; /*10px de arriba y abajo, y 20px de izq a der*/
+    display: flex; /*Un elemento al lado del otro*/
+    justify-content: center; /*Contenido centrado*/
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+}
+.caja__trasera div{
+    margin: 100px 40px; /*Margin de los div*/
+    color: white; /*Color de letra*/
+    transition: all 500ms; /*Transición genera movimiento*/   
+}
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+}
+.caja__trasera div h3{
+    font-weight: 400; /*Permite especificar el grosor de la fuente*/
+    font-size: 26px;  /*especifica la dimensión de la letra*/
+}
+.caja__trasera button{
+    padding: 10px 40px;  /*alto y espacioado entre elementos*/
+    border: 2px solid #ffffff; /*borde del boton*/
+    background: transparent; /*color fondo del botón*/
+    font-size: 14px; /*especifica la dimensión de la letra*/
+    font-weight: 600; /*Permite especificar el grosor de la fuente*/
+    cursor: pointer; /*especifica el tipo de cursor que se mostrara cuando este se encuentre sobre un elemento*/
+    color: white; /*Color letra button*/
+    outline: none; /*Quita la linea negra del botón cuando se pone el mouse*/
+    transition: all 300ms; /*Transición genera movimiento*/
+}
+.caja__trasera button:hover{
+    background: #ffffff;
+    color:#46A2FD;
+}
+/***Formularios*/
+.contenedor__login-register{
+    display: flex; /*Posicione de manera vertical*/
+    align-items: center; /* indica la alineación de un elemento dentro del bloque que lo contiene*/
+    width: 100%;  /*ancho del elemento*/
+    max-width: 300px; /*define el ancho máximo de un elemento*/
+    position: relative; /*Especifica el tipo de método de posicionamiento utilizado para un elemento*/
+    top: -185px; /*Afecta a la posición vertical de un elemento posicionado*/
+    left: 10px /*Afecta a la posición horizontal de un elemento posicionado*/
+
+}
+.contenedor__login-register form{
+    width: 100%; /*ancho del elemento*/
+    padding: 80px 20px; /*alto y espacioado entre elementos*/
+    background: #ffffff; /*Color*/
+    position: absolute; /*Especifica el tipo de método de posicionamiento utilizado para un elemento. El elemento se coloca en relación con su primer elemento*/
+    border-radius: 20px; /*Esquinas redondas*/
+}
+.contenedor__login-register form h2{
+    font-size: 30px; /*especifica la dimensión de la letra*/
+    text-align: center; /*Alineación texto*/
+    margin-bottom: 20px; /*Margen ingerior*/
+    color: #46A2FD; /*Color de la letra*/
+}
+.contenedor__login-register form input{
+    width: 100%; /*ancho del elemento*/
+    margin-top: 20px;  /*Margen superior*/
+    padding: 10px; /*espacioado entre elementos*/
+    border: none; /*Elimina los bordes*/
+    background: #f2f2f2;  /*Color fondo*/
+    font-size: 16x; /*especifica la dimensión de la letra*/
+    outline: none; /*Quitar recuadro negro en los campo*/
+}
+.contenedor__login-register form button{
+    padding: 10px 40px; /*Espaciado alto y ancho*/
+    margin-top: 40px;  /*Margen superior*/
+    border: none;  /*Elimina los bordes*/
+    font-size: 14px; /*especifica la dimensión de la letra*/
+    background: #46A2FD; /*Color fondo*/
+    color: white; /*Color letra boton*/
+    cursor: pointer; /*especifica el tipo de cursor que se mostrara cuando este se encuentre sobre un elemento*/
+    outline: none;
+}
+.formulario__login{
+    opacity: 1; /*Establece el nivel de opacidad de un elemento*/
+    display: block;
+}
+.formulario_register{
+    display: none;
+}
+/*Trabajar Responsive  Pendiente*/
+
+
+
+
 /*Estilos Footer*/
-.container-footer {
+.container-footer{
     max-width: 1170px;
     margin:auto;
 }

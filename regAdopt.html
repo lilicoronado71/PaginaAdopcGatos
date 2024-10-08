@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Hace que la pagina sea "responsive" en dispositivos móviles-->
-        <link rel="stylesheet" href="estilos/index.css">
+        <link rel="stylesheet" href="estilos/regAdopt.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <title>Looking Cats For Family</title>
     </head>
@@ -33,8 +33,41 @@
             
             <!--Contenido de la pagina principal-->
             <main>
-                
+                <div calss="contendedor__todo">
+                    <div class="caja__trasera">
+                        <div class="caja__trasera-login">
+                            <h3>¿Tiene cuenta registrada?</h3>
+                            <p>Iniciar Sesión</p>
+                            <button id="btn__iniciar-sesion">Inicar sesión</button>
+                        </div>
+                        <div class="caja__trasera-register">
+                            <h3>¿Aun no tiene cuenta registrada?</h3>
+                            <p>Registrarse para iniciar sesión</p>
+                            <button id="btn__iniciar-sesion">Inicar Sesión</button>
+                        </div>
+                    </div>
+                    <!--Formulario de ingreso y registro-->
+                    <div class="contenedor__login-register">   
+                        <!--Ingreso o Login-->                     
+                        <form action="" class="formulario__login">
+                            <h2>Iniciar Sesión</h2>
+                            <input type="email" placeholder="Correo Electrónico">
+                            <input type="password" placeholder="Contraseña">
+                            <button>Ingresar</button>
+                        </form>
+                        <!--Registro--> 
+                        <form action="" class="formulario_register">
+                            <h2>Registrarse</h2>
+                            <input type="text" placeholder="Nombre Completo">
+                            <input type="email" placeholder="Correo Electrónico">
+                            <input type="text" placeholder="Usuario">
+                            <input type="password" placeholder="Contraseña">
+                            <button>Registrarse</button>
+                        </form>
+                    </div>
+                </div> 
             </main>
+            <script src="scripts/regAdopt.js"></script>
 
             <footer class="footer">
                 <!--Pie de Pagina-->

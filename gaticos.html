@@ -33,25 +33,30 @@
             
             <!--Contenido de la pagina principal-->
             <main>
-                            <!--Contenido de la pagina principal-->
-            <main>
-                <!--Seccion Búsqueda de gatos-->                        
-                <section class="section searchcat-section">
-                    <!--Sección imagen y campo lista para búwsqueda de gatos por raza-->
-                    <div class="searchCat-image">
-                        <img src="imagenes/caritas_gatos.jpg" alt="img-buscar-gato">                    
-                    </div>
-                    <div class="searchCat-list">
-                        <input type="list" class="list-Type-cat" size="50">                  
-                    </div>
-                    <div class="searchCat-search">
-                        <button type="button" id="searchCat" onclick=catList()>Buscar mi gatico!!</button>
-                        <script src="scripts/index.js"></script>
-                    </div>
-                </section> 
-                
+                <form action="searchCats">
+                     <!--Seccion Búsqueda de gatos-->                                          
+                    <section class="section searchcat-section">
+                        <!--Sección imagen y campo lista para búwsqueda de gatos por raza-->
+                        <div class="searchCat-image">
+                            <img src="imagenes/caritas_gatos.jpg" alt="img-buscar-gato">                    
+                        </div>
+                        <div class="searchCat-list">
+                            <!--<input type="list" class="list-Type-cat" id="list" size="50">-->
+                            <!--<select name="list" id="list"></select>-->
+                            <ul id="list"></ul>              
+                        </div>
+                        <div class="searchCat-search">
+                            <p class="nombre">Ejemplo cambiar color</p>
+                            <button onclick="searchCat()">Buscar mi gatico!!</button>
+                            <script src="scripts/gaticos.js"></script>
+                        </div>
+                    </section> 
+                </form>
+                <!--Mostrar gatos en la casa hogar-->
+                <section id="ListCatxBreed">
+                    
 
-                
+                </section>
             </main>
 
             <footer class="footer">
