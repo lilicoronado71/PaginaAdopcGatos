@@ -8,7 +8,7 @@
 
 /*Estilos para el header*/
 .header-container {
-    display: flex; /*Convertimos al menú en flexbox*/
+    display: flex; /*Convertimos al menú en flexbox. Usa Flexbox para alinear elementos*/
     justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
     align-items: center; /*con esto alineamos de manera vertical*/
     background-color:  #CC99FF; /*Color de fondo*/
@@ -23,7 +23,7 @@
     width:50%; /*Configura el ancho de un elemento*/
     display:inline-block; /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
     font-family: 'Courier New', Courier, monospace; /*Tipo de fuente*/
-    font-size: larger; /*Tamaño de la fuente*/
+    font-size: 30px; /*Tamaño de la fuente*/
     font:bolder; /*Negrilla*/
     text-align: end; /*Propiedad para asignar la alineación horizontal de un texto*/
 }
@@ -49,7 +49,7 @@
 
 .menu-button{
     display: none; /*none (ocular) Mostrar/Ocular Si se muestra algo o no y cómo se muestra*/
-    background-color: #628983; /*Color fondo de la navegación*/
+    background-color: #FFCCFF; /*Color fondo de la navegación*/
     color: white; /*Color del texto*/
     padding: 10px; /*Espacio inferior de los enlaces*/
     border: none; /**Borde al interior*/
@@ -190,5 +190,28 @@ ul{
      color: #24262b;  /*Color letra*/
      background-color: #ffffff; /*Color de fondo*/
  }
-   
+
+
+ /*Media Query Responsive
+ Se aplica la regla a partir de la dimensión de la pantalla*/
+ @media (max-width:768px){
+
+    .menu-button{
+        display: block; /*Mostrar Menú Hamburguesa*/
+    }
+
+    .navegacion ul{
+        flex-direction: column;  /**/
+        align-items: center; /*Centrar el menú*/
+        display: none; /*Oculta botones del menú de navegación*/
+    }
+
+    .header-container .texto{
+        font-size: 15px; /*Tamaño de la fuente*/
+    }
+
+    .section-container h1{
+        font-size: 20px; /*Tamaño de la fuente*/
+    }
+ }
  
