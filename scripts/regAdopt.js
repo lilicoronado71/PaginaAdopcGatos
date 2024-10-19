@@ -1,4 +1,22 @@
-//alert("Hola mundo")
+const nav = document.querySelector("#navegacion");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+//console.log("entró al java")
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})
+
+
+
+
+//console.log("Hola mundo")
 let contenedor_login_register=document.getElementsByClassName(".contenedor__login-register");
 let formulario_login=document.getElementsByClassName(".formulario__login");
 let formulario_register=document.getElementsByClassName(".formulario_register");

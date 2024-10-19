@@ -14,26 +14,27 @@
             <header class="header">
                 <div class="header-container">
                     <div class="logo"><img src="imagenes/Gaticos_3.jpg" alt="ImagenGatos"></div>
-                    <div class="texto"><H2>Looking Cats For Family</H2></div>                        
+                    <div class="texto"><H2>Looking Cats For Family</H2></div>
+                    <button id="abrir" class="menu-abrir">☰</button><!--Menú hamburguesa-->                     
                 </div>
                 <!--Botón para cuando la pantalla sea pequeña-->
-                
             </header>
             <!--Navegación princial-->
-            <nav class="navegacion">
+
+            <nav class="navegacion" id="navegacion">
+                <button id="cerrar" class="menu-cerrar">☰</button><!--Menú hamburguesa-->
                 <ul>
-                    <li><a href="http://localhost:3000/index.html">INICIO</a></li>
-                    <li><a href="http://localhost:3000/gaticos.html">GATICOS</a></li>           
-                    <!--<li><a href="http://localhost:3000/regAdopt.html">REGISTRO ADOPTANTES</a></li>-->
-                    <li><a href="http://localhost:3000/nuevaFami.html">NUEVAS FAMILIAS</a></li>
-                    <li><a href="http://localhost:3000/admon.html">ADMINISTRACION</a></li>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="gaticos.html">GATICOS</a></li>           
+                    <!--<li><a href="regAdopt.html">REGISTRO ADOPTANTES</a></li>-->
+                    <li><a href="nuevaFami.html">NUEVAS FAMILIAS</a></li>
+                    <li><a href="admon.html">ADMINISTRACION</a></li>
                 </ul>
-                <button class="menu-button" onclick="toogleMenu()">☰ Menú</button><!--Menú hamburguesa-->
             </nav>  
             
             <!--Contenido de la pagina principal-->
             <main>
-                <div calss="contendedor__todo">
+                <div class="contendedor__todo">
                     <div class="caja__trasera">
                         <div class="caja__trasera-login">
                             <h3>¿Tiene cuenta registrada?</h3>
@@ -65,9 +66,9 @@
                             <button>Registrarse</button>
                         </form>
                     </div>
-                </div> 
+                </div>
+                <script src="scripts/regAdopt.js"></script>
             </main>
-            <script src="scripts/regAdopt.js"></script>
 
             <footer class="footer">
                 <!--Pie de Pagina-->

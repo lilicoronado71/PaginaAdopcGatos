@@ -39,7 +39,7 @@
     margin-top: 10px; /*Espacio superios*/
 }
 
-.navegacion a{
+.navegacion li a{
     text-decoration: none; /*elimina el subrayado*/
     color: black; /*Color del texto de los enlaces*/
     padding: 5px 10px; /*Espacio inferior de los enlaces*/
@@ -47,40 +47,35 @@
     border-radius: 10px; /*Bordes redondos*/
 }
 
-.menu-button{
-    display: none; /*none (ocular) Mostrar/Ocular Si se muestra algo o no y cómo se muestra*/
-    background-color: #628983; /*Color fondo de la navegación*/
-    color: white; /*Color del texto*/
-    padding: 10px; /*Espacio inferior de los enlaces*/
-    border: none; /**Borde al interior*/
-    cursor: pointer; /*Para que aparezca mano cuando pase el mouse sobre el menú*/
-    margin-top: 10px; /*Margen superior*/
+.menu-abrir,
+.menu-cerrar{
+    display: none; /*none Ocultar Si se muestra algo o no y cómo se muestra*/
 }
 
 .body{
-    background-color: #e0e2e2;
+    background-color: #e0e2e2; /*Color fondo de la navegación*/
 }
 /*Estilos secciones main - secciones*/
 .section{
-    display: inline-block;
-    width: 40%;
-    flex-wrap: wrap;
+    display: inline-block;  /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+    width: 40%; /*Configura el ancho de un elemento*/
+    flex-wrap: wrap; /*especifica si los elementos flexibles deben ajustarse o no*/
 }
 /*Sección de Búsqueda de gatos*/
 .searchcat-section{
-    display: flex;
+    display: flex; /*Usa Flexbox para alinear elementos para temas de responsive*/
     padding: 20px; /*Espacio interior placeholder*/
     margin-top: 25px; /*<margen inferior del placeholder*/ 
-    gap: 10px;
+    gap: 10px; /*Define el tamaño del espacio entre las filas y entre las columnas en flexbox*/
 }
 .searchCat-list{
-    margin-top: 5px; 
-    font-size:xx-large;
+    margin-top: 5px; /*Define margen superior*/
+    font-size:xx-large; /*Tamaño de la fuente*/
 }
 .searchCat-search{  
-    margin-top: 20px; 
-    font-size: 10px;
-    font-weight: bold;
+    margin-top: 20px;  /*Define margen superior*/
+    font-size: 10px;  /*Tamaño de la fuente*/
+    font-weight: bold;  /*Negrilla*/
 }
 
 
@@ -88,53 +83,100 @@
 
 /*Estilos Footer*/
 .container-footer {
-    max-width: 1170px;
-    margin:auto;
+    max-width: 1170px; /*establece el ancho máximo de un elemento*/
+    margin:auto; /*centra horizontalmente el elemento dentro de su contenedor*/
 }
 
 .row{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /*Usa Flexbox para alinear elementos para temas de responsive*/
+    flex-wrap: wrap;  /*especifica si los elementos flexibles deben ajustarse o no*/
 }
 
 ul{
-    list-style: none;
+    list-style: none; /*establecer todas las propiedades de la lista en una declaración*/
 }
 
 .footer{
     background-color: #9999FF; /*color de fondo*/
-    padding: 70px 0;
+    padding: 70px 0; /*se utiliza para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido*/
 }
 
 .col-1{
-    width: 30%;
-    padding: 0 15px;
+    width: 30%; /*Configura el ancho de un elemento*/
+    padding: 0 15px; /*se utiliza para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido*/
 }
 
 .col-1 h3{
-   font-size: 18px;
-   color: black;
-   text-transform: capitalize;
-   margin-bottom: 35px;
-   font-weight: 500;
-   position: relative;
-}
+    font-size: 18px;  /*Tamaño de la fuente*/
+    color: black;  /*Color*/
+    text-transform: capitalize; /*controla el uso de mayúsculas en el texto*/
+    margin-bottom: 35px;  /*Establece el margen inferior para un elemento en pixeles*/
+    font-weight: 500;  /*establece qué tan gruesos o finos deben mostrarse los caracteres del texto*/
+    position: relative; /*especifica el tipo de método de posicionamiento utilizado para un elemento*/
+ }
+ .col-1 .social-links a{
+     display: inline-block;  /*Propiedad usada para especificar cómo un elemento es mostrado en la pagina web*/
+     height: 40px;  /*Configura el alto de un elemento*/
+     width: 40px;  /*Configura el ancho de un elemento*/
+     background-color: rgba(255,255,255,0.2);  /*color de fondo*/
+     margin:0 10px 10px 0; /*Crea espacios alrededor de los elementos, fuera de los bordes definidos.*/
+     text-align: center; /*Especifica la alineación horizontal del texto en un elemento*/
+     line-height: 40px;  /*Especifica la altura de una línea*/
+     border-radius: 50%; /*permite agregar esquinas redondeadas a los elementos*/
+     color: #ffffff;  /*Color*/
+     transition: all 0.5s ease;  /*Permite cambiar los valores de las propiedades sin problemas, durante un período determinado*/
+ }
+ .footer-col .social-links a:hover{
+     color: #24262b;  /*Color letra*/
+     background-color: #ffffff; /*Color de fondo*/
+ }
 
-.col-1 .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
-}
 
-.footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
-}
+ /*Media Query Responsive
+ Se aplica la regla a partir de la dimensión de la pantalla*/
+ @media screen and (max-width:768px){
+
+    .menu-abrir, .menu-cerrar{
+         display: block;  /*Mostrar el botón*/
+         border: 0;
+         background-color: #e0e2e2;
+         font-size: 1.25rem;
+         cursor: pointer;
+    }
+    .menu-abrir{
+         margin-top: 130px;
+         position: absolute; /*Un elemento con posición absoluta; está posicionado en relación con el antecesor posicionado más cercano*/
+         align-items: end;
+         right: 0;
+    }
+ 
+    .navegacion{
+         opacity: 0; /*Se usa a menudo junto con el selector :hover para cambiar la opacidad al pasar el mouse*/
+         visibility: hidden; /*Especifica si un elemento es visible o no*/
+         display: flex;
+         flex-direction: column; /*especifica la dirección de los elementos flexibles*/
+         align-items: end;
+         position: absolute;
+         right: 0;  /*Items a la derecha*/
+     }
+        
+    .navegacion.visible{
+         opacity: 1;
+         visibility: visible;
+    }
+         
+    .navegacion ul{
+         flex-direction: column;
+         align-items: end;  /*Items al final*/
+    }
+    
+     .header-container .texto{
+         font-size: 15px; /*Tamaño de la fuente*/
+     }
+ 
+     .section-container h1{
+         font-size: 20px; /*Tamaño de la fuente*/
+     }
+  }
   
+ 

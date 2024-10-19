@@ -2,7 +2,7 @@ const nav = document.querySelector("#navegacion");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
-console.log("entró al java")
+//console.log("entró al java")
 
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
@@ -12,15 +12,3 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
-
-
-
-
-
-
-
-
-
-function searchCat(){
-   alert("Entró a la función");
-}

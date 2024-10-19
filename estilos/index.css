@@ -52,6 +52,7 @@
     display: none; /*none Ocultar Si se muestra algo o no y cómo se muestra*/
 }
 
+/*Contenido cuerpo de la página*/
 .body{
     background-color: #e0e2e2; /*Color fondo de la navegación*/
 }
@@ -196,19 +197,20 @@ ul{
         border: 0;
         background-color: #e0e2e2;
         font-size: 1.25rem;
+        cursor: pointer;
    }
    .menu-abrir{
         margin-top: 130px;
-        position: absolute;
+        position: absolute; /*Un elemento con posición absoluta; está posicionado en relación con el antecesor posicionado más cercano*/
         align-items: end;
         right: 0;
    }
 
    .navegacion{
-        opacity: 0;
-        visibility: hidden;
+        opacity: 0; /*Se usa a menudo junto con el selector :hover para cambiar la opacidad al pasar el mouse*/
+        visibility: hidden; /*Especifica si un elemento es visible o no*/
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /*especifica la dirección de los elementos flexibles*/
         align-items: end;
         position: absolute;
         right: 0;  /*Items a la derecha*/

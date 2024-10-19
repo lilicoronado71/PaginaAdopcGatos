@@ -12,15 +12,3 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
-
-
-
-
-
-
-
-
-
-function searchCat(){
-   alert("Entró a la función");
-}
