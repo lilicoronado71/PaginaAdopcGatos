@@ -39,7 +39,7 @@
     margin-top: 10px; /*Espacio superios*/
 }
 
-.navegacion a{
+.navegacion li a{
     text-decoration: none; /*elimina el subrayado*/
     color: black; /*Color del texto de los enlaces*/
     padding: 5px 10px; /*Espacio inferior de los enlaces*/
@@ -47,14 +47,9 @@
     border-radius: 10px; /*Bordes redondos*/
 }
 
-.menu-button{
-    display: none; /*none (ocular) Mostrar/Ocular Si se muestra algo o no y cómo se muestra*/
-    background-color: #FFCCFF; /*Color fondo de la navegación*/
-    color: white; /*Color del texto*/
-    padding: 10px; /*Espacio inferior de los enlaces*/
-    border: none; /**Borde al interior*/
-    cursor: pointer; /*Para que aparezca mano cuando pase el mouse sobre el menú*/
-    margin-top: 10px; /*Margen superior*/
+.menu-abrir,
+.menu-cerrar{
+    display: none; /*none Ocultar Si se muestra algo o no y cómo se muestra*/
 }
 
 .body{
@@ -194,18 +189,41 @@ ul{
 
  /*Media Query Responsive
  Se aplica la regla a partir de la dimensión de la pantalla*/
- @media (max-width:768px){
+ @media screen and (max-width:768px){
 
-    .menu-button{
-        display: block; /*Mostrar Menú Hamburguesa*/
+   .menu-abrir, .menu-cerrar{
+        display: block;  /*Mostrar el botón*/
+        border: 0;
+        background-color: #e0e2e2;
+        font-size: 1.25rem;
+   }
+   .menu-abrir{
+        margin-top: 130px;
+        position: absolute;
+        align-items: end;
+        right: 0;
+   }
+
+   .navegacion{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        right: 0;  /*Items a la derecha*/
     }
-
-    .navegacion ul{
-        flex-direction: column;  /**/
-        align-items: center; /*Centrar el menú*/
-        display: none; /*Oculta botones del menú de navegación*/
-    }
-
+       
+   .navegacion.visible{
+        opacity: 1;
+        visibility: visible;
+   }
+        
+   .navegacion ul{
+        flex-direction: column;
+        align-items: end;  /*Items al final*/
+   }
+   
     .header-container .texto{
         font-size: 15px; /*Tamaño de la fuente*/
     }
