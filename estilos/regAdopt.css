@@ -74,8 +74,8 @@ main{
     padding: 10px 20px; /*10px de arriba y abajo, y 20px de izq a der*/
     display: flex; /*Un elemento al lado del otro*/
     justify-content: center; /*Contenido centrado*/
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 128, 255, 0.5);
+    backdrop-filter: blur(10px); /* se utiliza para aplicar un efecto gráfico al área detrás de un elemento*/
+    background-color: #CC99FF;
 }
 .caja__trasera div{
     margin: 100px 40px; /*Margin de los div*/
@@ -103,7 +103,7 @@ main{
 }
 .caja__trasera button:hover{
     background: #ffffff;
-    color:#46A2FD;
+    color:black;
 }
 /***Formularios*/
 .contenedor__login-register{
@@ -113,12 +113,14 @@ main{
     max-width: 300px; /*define el ancho máximo de un elemento*/
     position: relative; /*Especifica el tipo de método de posicionamiento utilizado para un elemento*/
     top: -185px; /*Afecta a la posición vertical de un elemento posicionado*/
-    left: 10px /*Afecta a la posición horizontal de un elemento posicionado*/
+    left: 10px; /*Afecta a la posición horizontal de un elemento posicionado*/
 
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);  
+    /*es una función personalizada, donde podemos indicar 4 valores concretos que definirán el ritmo deseado para la transición o animación*/
 }
 .contenedor__login-register form{
     width: 100%; /*ancho del elemento*/
-    padding: 80px 20px; /*alto y espacioado entre elementos*/
+    padding: 40px 20px; /*alto y espacioado entre elementos*/
     background: #ffffff; /*Color*/
     position: absolute; /*Especifica el tipo de método de posicionamiento utilizado para un elemento. El elemento se coloca en relación con su primer elemento*/
     border-radius: 20px; /*Esquinas redondas*/
@@ -127,7 +129,7 @@ main{
     font-size: 30px; /*especifica la dimensión de la letra*/
     text-align: center; /*Alineación texto*/
     margin-bottom: 20px; /*Margen ingerior*/
-    color: #46A2FD; /*Color de la letra*/
+    color: black; /*Color de la letra*/
 }
 .contenedor__login-register form input{
     width: 100%; /*ancho del elemento*/
@@ -143,23 +145,27 @@ main{
     margin-top: 40px;  /*Margen superior*/
     border: none;  /*Elimina los bordes*/
     font-size: 14px; /*especifica la dimensión de la letra*/
-    background: #46A2FD; /*Color fondo*/
+    background: #CC99FF; /*Color fondo*/
     color: white; /*Color letra boton*/
     cursor: pointer; /*especifica el tipo de cursor que se mostrara cuando este se encuentre sobre un elemento*/
     outline: none;
 }
 .formulario__login{
     opacity: 1; /*Establece el nivel de opacidad de un elemento*/
-    display: block;
+    display: block;  /*Muestra el formulario*/
 }
-.formulario_register{
-    display: none;
+.formulario__register{
+    display: none;  /*Oculta el formulario*/
 }
-/*Trabajar Responsive  Pendiente*/
-
 
 
 /*Estilos Footer*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 225px;
+}
 .container-footer {
     max-width: 1170px; /*establece el ancho máximo de un elemento*/
     margin:auto; /*centra horizontalmente el elemento dentro de su contenedor*/
@@ -213,7 +219,7 @@ ul{
  /*Media Query Responsive
  Se aplica la regla a partir de la dimensión de la pantalla*/
  @media screen and (max-width:768px){
-
+/*Media Query para el menu hamburguesa*/
    .menu-abrir, .menu-cerrar{
         display: block;  /*Mostrar el botón*/
         border: 0;
@@ -252,8 +258,37 @@ ul{
         font-size: 15px; /*Tamaño de la fuente*/
     }
 
-    .contendedor__todo{
-        margin-top: 30%;
+    /* .contendedor__todo{
+        margin-top: 40%;
+    } */
+
+    /*Media Query para el login y registro*/
+    main{
+        margin-top: 50px; /*Pixeles hacía abajo*/
     }
+
+    .caja__trasera{
+        max-width: 350px;  /*para que la caja trasera sea mas estrecha que los formularios*/
+        height: 300px; /*altura*/
+        flex-direction: column; /*Poner ítems en columna*/
+        margin: auto; /*para que se mantenga centrado*/
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute; /*los div se puedan montar uno encima del otro*/
+    }
+
+    /*Formularios*/
+    .contenedor__login-register{
+        top: -10px; /*Para que se vea un poco más hacía arriba*/
+        left: -5px; /*Para que se mueva hacía la izquierda*/
+        margin: auto; /*Para que se manenga centrado*/
+    }
+
+    .contenedor__login-register form{
+        position: relative; 
+    }
+
  }
  
