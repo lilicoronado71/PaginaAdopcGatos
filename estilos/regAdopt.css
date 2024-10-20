@@ -55,6 +55,7 @@
 /*Contenido cuerpo de la página*/
 .body{
     background-color: #e0e2e2; /*Color fondo de la navegación*/
+
 }
 
 main{
@@ -158,6 +159,11 @@ main{
     display: none;  /*Oculta el formulario*/
 }
 
+.error{
+    color: red;
+    font-size: 12px;
+    display: none; /*No hay ningún display*/
+}
 
 /*Estilos Footer*/
 .footer{
@@ -220,6 +226,10 @@ ul{
  Se aplica la regla a partir de la dimensión de la pantalla*/
  @media screen and (max-width:768px){
 /*Media Query para el menu hamburguesa*/
+    .footer{
+        display: none;
+    }
+
    .menu-abrir, .menu-cerrar{
         display: block;  /*Mostrar el botón*/
         border: 0;
