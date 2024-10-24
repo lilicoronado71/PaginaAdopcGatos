@@ -1,6 +1,6 @@
 {
     "totalGatos":49,
-    "listaGatos":[
+    "CantGaticosPorRaza":[
         {
             "raza":"Africano Doméstico",
             "cantidad":2
