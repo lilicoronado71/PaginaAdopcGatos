@@ -33,7 +33,7 @@
             
             <!--Contenido de la pagina principal-->
             <main>
-                <form action="searchCats">
+                <form>
                      <!--Seccion Búsqueda de gatos-->                                          
                     <section class="section searchcat-section">
                         <!--Sección imagen y campo lista para búwsqueda de gatos por raza-->
@@ -41,21 +41,18 @@
                             <img src="imagenes/caritas_gatos.jpg" alt="img-buscar-gato">                    
                         </div>
                         <div class="searchCat-list">
-                            <!--<input type="list" class="list-Type-cat" id="list" size="50">-->
-                            <!--<select name="list" id="list"></select>-->
-                            <ul id="list"></ul>              
+                            <select name="listaRazasGatos" id="listaRazasGatos" onchange="ShowSelected()">
+                                <option></option>
+                            </select>
                         </div>
                         <div class="searchCat-search">
-                            <button onclick="searchCat()">Buscar mi gatico!!</button>
-                            <script src="scripts/gaticos.js"></script>
+                            <button onclick="BuscarGatos()">Buscar mi gatico!!</button>
                         </div>
                     </section> 
                 </form>
                 <!--Mostrar gatos en la casa hogar-->
-                <section id="ListCatxBreed">
-                    
 
-                </section>
+                <script src="scripts/gaticos.js"></script>
             </main>
 
             <footer class="footer">
