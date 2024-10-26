@@ -72,14 +72,48 @@
     margin-top: 5px; /*Define margen superior*/
     font-size:xx-large; /*Tamaño de la fuente*/
 }
-.searchCat-search{  
-    margin-top: 20px;  /*Define margen superior*/
-    font-size: 10px;  /*Tamaño de la fuente*/
-    font-weight: bold;  /*Negrilla*/
+.searchCat-list p{
+    font-size: small; /*Tamaño de la fuente*/
 }
 
-
-
+ /*Estilos para la tabla*/
+.div-container{
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+}
+.tabla{
+    color: black;
+    font-size: 14px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-spacing: 2px;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+thead{  
+    background-color: #FFCCFF;
+}
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+}
+td{
+    padding: 15px;
+    border-bottom: solid 3px rgba(223, 128, 183, 0.2);
+  
+}
+tbody tr{
+    align-items: center;
+}
+tbody tr:hover{
+    background: #9c2478;
+}
 
 /*Estilos Footer*/
 .container-footer {
@@ -99,6 +133,9 @@ ul{
 .footer{
     background-color: #9999FF; /*color de fondo*/
     padding: 70px 0; /*se utiliza para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido*/
+    width: 100%;
+    height: 225px;
+    bottom: 0;
 }
 
 .col-1{

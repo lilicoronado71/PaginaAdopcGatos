@@ -166,12 +166,6 @@ main{
 }
 
 /*Estilos Footer*/
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 225px;
-}
 .container-footer {
     max-width: 1170px; /*establece el ancho máximo de un elemento*/
     margin:auto; /*centra horizontalmente el elemento dentro de su contenedor*/
@@ -189,6 +183,10 @@ ul{
 .footer{
     background-color: #9999FF; /*color de fondo*/
     padding: 70px 0; /*se utiliza para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 225px;
 }
 
 .col-1{

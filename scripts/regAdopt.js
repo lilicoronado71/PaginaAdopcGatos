@@ -17,7 +17,6 @@ cerrar.addEventListener("click", () => {
 //Funcionalidad de login y registro
 document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 document.getElementById("btn__registrarse").addEventListener("click", register);
-
 window.addEventListener("resize", anchoPagina);
 
 //Declaración de variables
@@ -27,6 +26,7 @@ let formulario_register = document.querySelector(".formulario__register");
 let caja_trasera_login = document.querySelector(".caja__trasera-login");
 let caja_trasera_register = document.querySelector(".caja__trasera-register");
 
+//Cuando la ventana este aumentando, disminuyendo de tamañao re-size
 function anchoPagina() {
     if (window.innerWidth > 768) {
         caja_trasera_login.style.display = "block";

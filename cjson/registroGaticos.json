@@ -1,46 +1,170 @@
-{
-    "registroGaticos": [
-        {
-            "nombGato":"Tom",
-            "raza":"Calico",
-            "edad":"1",
-            "madurez":"Joven",
-            "colorPelaje":["blanco","negro","naranja"],
-            "sexo":"M",
-            "esterilizado":"Si",
-            "origen":"Calle",
-            "vacunas":"",
-            "estadoSalud":"Sano",
-            "marcas":"Ninguna",
-            "fotoGato":""
-        },
-        {
-            "nombGato":"Filomena",
-            "raza":"Calico",
-            "edad":"3",
-            "madurez":"Adulto",
-            "colorPelaje":["blanco","negro","naranja"],
-            "sexo":"H",
-            "esterilizado":"No",
-            "origen":"Entregado",
-            "vacunas":"",
-            "estadoSalud":"Crítico",
-            "marcas":"Falta pata derecha trasera",
-            "fotoGato":""
-        },
-        {
-            "nombGato":"Luna",
-            "raza":"Criollo",
-            "edad":"5",
-            "madurez":"Adulto",
-            "colorPelaje":["negro","blanco"],
-            "sexo":"H",
-            "esterilizado":"Si",
-            "origen":"Abandonado",
-            "vacunas":"",
-            "estadoSalud":"Enfermo",
-            "marcas":"Ninguna",
-            "fotoGato":""
-        }
-    ]
-}
+[
+    {
+        "nombGato": "Tom",
+        "raza": "Calico",
+        "edad": "1",
+        "madurez": "Joven",
+        "colorPelaje": [
+            "blanco",
+            " negro",
+            " naranja"
+        ],
+        "sexo": "M",
+        "esterilizado": "Si",
+        "origen": "Calle",
+        "vacunas": "Rabia",
+        "estadoSalud": "Sano",
+        "marcas": "Ninguna",
+        "fotoGato": "fotos/Tom.jpg"
+    },
+    {
+        "nombGato": "Filomena",
+        "raza": "Calico",
+        "edad": "3",
+        "madurez": "Adulto",
+        "colorPelaje": [
+            "blanco",
+            " negro",
+            " naranja"
+        ],
+        "sexo": "H",
+        "esterilizado": "No",
+        "origen": "Entregado",
+        "vacunas": "Sin Vacunas",
+        "estadoSalud": "Crítico",
+        "marcas": "Falta pata derecha trasera",
+        "fotoGato": "fotos/Filomena.jpg"
+    },
+    {
+        "nombGato": "Luna",
+        "raza": "Criollo",
+        "edad": "5",
+        "madurez": "Adulto",
+        "colorPelaje": [
+            "negro",
+            " blanco"
+        ],
+        "sexo": "H",
+        "esterilizado": "Si",
+        "origen": "Abandonado",
+        "vacunas": "Rabia",
+        "estadoSalud": "Enfermo",
+        "marcas": "Ninguna",
+        "fotoGato": "fotos/Luna.jpg"
+    },
+    {
+        "nombGato": "Max",
+        "raza": "Africano Doméstico",
+        "edad": "10",
+        "madurez": "Adulto",
+        "colorPelaje": [
+            "amarillo atigrado"
+        ],
+        "sexo": "M",
+        "esterilizado": "No",
+        "origen": "Abandonado",
+        "vacunas": "Ninguna",
+        "estadoSalud": "Enfermo",
+        "marcas": "Ninguna",
+        "fotoGato": "fotos/Max.jpg"
+    },
+    {
+        "nombGato": "Miel",
+        "raza": "Africano Doméstico",
+        "edad": "5",
+        "madurez": "Adulto",
+        "colorPelaje": [
+            "amarillo atigrado",
+            " puntos negros"
+        ],
+        "sexo": "M",
+        "esterilizado": "Si",
+        "origen": "Entregado",
+        "vacunas": "Rinotraqueítis felina, Rabia",
+        "estadoSalud": "Sano",
+        "marcas": "Ninguna",
+        "fotoGato": "fotos/Miel.jpg"
+    },
+    {
+        "nombGato": "Fiona",
+        "raza": "Angora",
+        "edad": "1",
+        "madurez": "Joven",
+        "colorPelaje": [
+            "blanco",
+            " gris"
+        ],
+        "sexo": "H",
+        "esterilizado": "Si",
+        "origen": "Entregado",
+        "vacunas": "Panleucopenia felina, Rabia",
+        "estadoSalud": "Sano",
+        "marcas": "Ninguna",
+        "fotoGato": "fotos/Fiona.jpg"
+    },
+    {
+        "nombGato": "José",
+        "raza": "Angora",
+        "edad": "7",
+        "madurez": "Adulto",
+        "colorPelaje": [
+            "blanco"
+        ],
+        "sexo": "M",
+        "esterilizado": "Si",
+        "origen": "Calle",
+        "vacunas": "Rabia",
+        "estadoSalud": "Sano",
+        "marcas": "Ninguna",
+        "fotoGato": "fotos/Jose.jpg"
+    },
+    {
+        "nombGato": "Juana",
+        "raza": "Angora",
+        "edad": "6",
+        "madurez": "Adulto",
+        "colorPelaje": [
+            "blanco"
+        ],
+        "sexo": "H",
+        "esterilizado": "Si",
+        "origen": "Calle",
+        "vacunas": "Sin Vaunas",
+        "estadoSalud": "Sano",
+        "marcas": "Sorda",
+        "fotoGato": "fotos/Juana.jpg"
+    },
+    {
+        "nombGato": "Felipe",
+        "raza": "Angora",
+        "edad": "12",
+        "madurez": "Adulto",
+        "colorPelaje": [
+            "blanco",
+            " negro"
+        ],
+        "sexo": "M",
+        "esterilizado": "Si",
+        "origen": "Calle",
+        "vacunas": "Rabia",
+        "estadoSalud": "Sano",
+        "marcas": "Ninguna",
+        "fotoGato": "fotos/Felipe.jpg"
+    },
+    {
+        "nombGato": "Angus",
+        "raza": "Angora",
+        "edad": "2",
+        "madurez": "Adulto",
+        "colorPelaje": [
+            "negro"
+        ],
+        "sexo": "M",
+        "esterilizado": "Si",
+        "origen": "Entregado",
+        "vacunas": "Rabia, Leucemia felina",
+        "estadoSalud": "Sano",
+        "marcas": "Ninguna",
+        "fotoGato": "fotos/Angus.jpg"
+    }
+]

@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Hace que la pagina sea "responsive" en dispositivos móviles-->
-        <link rel="stylesheet" href="estilos/gaticos.css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <title>Looking Cats For Family</title>
-    </head>
-    <body class="body">
-        <div class="container">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Hace que la pagina sea "responsive" en dispositivos móviles-->
+    <link rel="stylesheet" href="estilos/gaticos.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Looking Cats For Family</title>
+</head>
+
+<body class="body">
+    <div class="container">
         <!--Header de la página-->
-            <header class="header">
-                <div class="header-container">
-                    <div class="logo"><img src="imagenes/Gaticos_3.jpg" alt="ImagenGatos"></div>
-                    <div class="texto"><H2>Looking Cats For Family</H2></div>
-                    <button id="abrir" class="menu-abrir">☰</button><!--Menú hamburguesa-->                       
+        <header class="header">
+            <div class="header-container">
+                <div class="logo"><img src="imagenes/Gaticos_3.jpg" alt="ImagenGatos"></div>
+                <div class="texto">
+                    <H2>Looking Cats For Family</H2>
                 </div>
-                <!--Botón para cuando la pantalla sea pequeña-->
-            </header>
-            <!--Navegación princial-->
-            <nav class="navegacion" id="navegacion">
-                <button id="cerrar" class="menu-cerrar">☰</button><!--Menú hamburguesa-->
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <!--<li><a href="gaticos.html">GATICOS</a></li>-->              
-                    <li><a href="regAdopt.html">REGISTRO ADOPTANTES</a></li>
-                    <li><a href="nuevaFami.html">NUEVAS FAMILIAS</a></li>
-                    <li><a href="admon.html">ADMINISTRACION</a></li>
-                </ul>
-            </nav>  
-            
-            <!--Contenido de la pagina principal-->
-            <main>
-                <form>
-                     <!--Seccion Búsqueda de gatos-->                                          
-                    <section class="section searchcat-section">
-                        <!--Sección imagen y campo lista para búwsqueda de gatos por raza-->
-                        <div class="searchCat-image">
-                            <img src="imagenes/caritas_gatos.jpg" alt="img-buscar-gato">                    
-                        </div>
-                        <div class="searchCat-list">
-                            <select name="listaRazasGatos" id="listaRazasGatos" onchange="ShowSelected()">
-                                <option></option>
-                            </select>
-                        </div>
-                        <div class="searchCat-search">
-                            <button onclick="BuscarGatos()">Buscar mi gatico!!</button>
-                        </div>
-                    </section> 
-                </form>
-                <!--Mostrar gatos en la casa hogar-->
+                <button id="abrir" class="menu-abrir">☰</button><!--Menú hamburguesa-->
+            </div>
+            <!--Botón para cuando la pantalla sea pequeña-->
+        </header>
+        <!--Navegación princial-->
+        <nav class="navegacion" id="navegacion">
+            <button id="cerrar" class="menu-cerrar">☰</button><!--Menú hamburguesa-->
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <!--<li><a href="gaticos.html">GATICOS</a></li>-->
+                <li><a href="regAdopt.html">REGISTRO ADOPTANTES</a></li>
+                <li><a href="nuevaFami.html">NUEVAS FAMILIAS</a></li>
+                <li><a href="admon.html">ADMINISTRACION</a></li>
+            </ul>
+        </nav>
 
-                <script src="scripts/gaticos.js"></script>
-            </main>
-
-            <footer class="footer">
-                <!--Pie de Pagina-->
-                <div class="container-footer">
-                    <!--Contenedor del footer-->
-                    <div class="row">
-                        <div class="col-1">
-                            <h3>Síguenos</h3>
-                            <ul>
-                                <div class="social-links">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="col-1">
-                            <h3>Contacto</h3>
-                            <p>e-mail: info@lookingforfamilycats.com</p>
-                            <p>Teléfono: 018000lookcat</p>
-                        </div>
-                        <div class="col-1">
-                            <h3>Derechos de autor</h3>
-                            <p>(c)2024 Mi sitio Web. Todos los derechos reservados</p>
-                        </div>
+        <!--Contenido de la pagina principal-->
+        <main>
+            <form>
+                <!--Seccion Búsqueda de gatos-->
+                <section class="section searchcat-section">
+                    <!--Sección imagen y campo lista para búwsqueda de gatos por raza-->
+                    <div class="searchCat-image">
+                        <img src="imagenes/caritas_gatos.jpg" alt="img-buscar-gato">
                     </div>
-                </div>         
-            </footer>
-        </div>
-    </body>
-    
+                    <div class="searchCat-list">
+                        <p>Selecciona una raza:</p>
+                        <select name="listaRazasGatos" id="listaRazasGatos" onchange="BuscarGatos()">
+                            <option></option>
+                        </select>
+                    </div>
+                </section>
+                <!--Mostrar lista de gatos en la casa hogar-->
+                <div class="div-container">
+                    <h2>Listado de Gaticos</h2>
+                    <table class="tabla" id="lista-gatos">
+                        <thead>
+                            <tr>
+                                <th>NOMBRE GATO</th>
+                                <th>EDAD (Años)</th>
+                                <th>COLOR</th>
+                                <th>SEXO</th>
+                                <th>ESTERILIZADO</th>
+                                <th>VACUNAS</th>
+                                <th>MARCAS</th>
+                                <th>FOTO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resulTabla">
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            <script src="scripts/gaticos.js"></script>
+        </main>
+
+        <footer class="footer">
+            <!--Pie de Pagina-->
+            <div class="container-footer">
+                <!--Contenedor del footer-->
+                <div class="row">
+                    <div class="col-1">
+                        <h3>Síguenos</h3>
+                        <ul>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="col-1">
+                        <h3>Contacto</h3>
+                        <p>e-mail: info@lookingforfamilycats.com</p>
+                        <p>Teléfono: 018000lookcat</p>
+                    </div>
+                    <div class="col-1">
+                        <h3>Derechos de autor</h3>
+                        <p>(c)2024 Mi sitio Web. Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>

@@ -37,10 +37,33 @@ const regGaticos = mongoose.model('registroGatico', registroGaticosSchema);
 //Ruta GET para obtener todos los ítems de la colección
 app.get('/api/obtenerRegistroGatico', async (req, res) => {
     try {
-        const razas = await regGaticos.find(); //buscar todas las raazas de gatos existentes
-        res.status(200).json(razas);  //Responder con el registro de razas
+        const gatos = await regGaticos.find(); //buscar todas las raazas de gatos existentes
+        res.status(200).json(gatos);  //Responder con el registro de razas
     } catch (error) {
         res.status(500).json({ error: 'Error al obtener el registro de gatos' });
+    }
+});
+
+//Definir el esquema y modelo de Mongoose para el registro de usuarios
+const registroUsuariosSchema = new mongoose.Schema({
+    nombreCompleto: { type: String, required: true },
+    correoElectronico: { type: String, required: true },
+    Direccion: { type: String, required: true },
+    Telefono: { type: Number, required: true },
+    contrasenia: { type: String, required: true },
+
+}, { timestamps: true }); //Añadir timestamps para añadir fecha de creación (createdAt) y modificacipon (updatedAt)
+
+
+const regUsuarios = mongoose.model('registroUsuario', registroUsuariosSchema);
+
+//Ruta GET para obtener todos los ítems de la colección
+app.get('/api/obtenerRegistroUsuario', async (req, res) => {
+    try {
+        const usuarios = await regUsuarios.find(); //buscar todas las raazas de gatos existentes
+        res.status(200).json(usuarios);  //Responder con el registro de razas
+    } catch (error) {
+        res.status(500).json({ error: 'Error al obtener el registro de usuarios' });
     }
 });
 
