@@ -56,20 +56,21 @@
                             <small class="error" id="emailError"></small>
                             <input type="password" id="password" placeholder="Contraseña">
                             <small class="error" id="passwordError"></small>
-                            <button class="btn_ingresar" onclick="ingresoUsuario()">Ingresar</button>
+                            <button id="btn_iniciaSesion">Ingresar</button>
                         </form>
                         <!--Registro--> 
                         <form action="" class="formulario__register">
                             <h2>Registrarse</h2>
-                            <input type="text" placeholder="Nombre Completo">
-                            <input type="email" placeholder="Correo Electrónico">
-                            <input type="text" placeholder="Dirección"> 
-                            <input type="text" placeholder="Teléfono">                            
-                            <input type="password" placeholder="Contraseña">
-                            <button id="btn_registro" onclick="registrarPersona()">Registro</button>
+                            <input type="text" placeholder="Nombre Completo" id="nombreCompleto">                            
+                            <input type="text" placeholder="Dirección" id="direccion"> 
+                            <input type="text" placeholder="Teléfono" id="telefono">
+                            <input type="email" placeholder="Correo Electrónico" id="correo">                        
+                            <input type="password" placeholder="Contraseña" id="contrasenia">
+                            <button id="btn_registro">Registro</button>
                         </form>
                     </div>
                 </div>
+                <small class="demo"></small>
                 <script src="scripts/regAdopt.js"></script>
             </main>
 

@@ -101,7 +101,7 @@ window.addEventListener("load", function (event) {
 
 //location.reload();
 function BuscarGatos() {
-    //alert("entro a la funciión BuscarGatos");
+    //alert("entro a la función BuscarGatos");
     let cuerpotabla = document.getElementById('resulTabla');
     cuerpotabla.innerHTML = "";  //reinicia la tabla
     var cod = document.getElementById("listaRazasGatos").value;
@@ -111,6 +111,7 @@ function BuscarGatos() {
 
         const tabla = document.querySelector('#lista-gatos tbody');
         console.log("raza seleccionada: " + cod);
+        //La interfaz Fetch API permite que el navegador web realice solicitudes HTTP a servidores web.
         fetch('cjson/registroGaticos.json')
             .then(respuesta => respuesta.json()) //Se indica el formato en el que se muestra la información
             .then(gatos => {

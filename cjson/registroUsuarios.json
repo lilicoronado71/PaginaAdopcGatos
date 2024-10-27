@@ -1,0 +1,23 @@
+[
+  {
+    "nombreCompleto": "Jairo Beltran",
+    "correoElectronico": "jbeltran@usuarioprueba.com",
+    "Direccion": "Camellon el Abra",
+    "Telefono": 3102111111,
+    "contrasenia": "jB7845*P"
+  },
+  {
+    "nombreCompleto": "Fiorella Duque",
+    "correoElectronico": "fduque@usuarioprueba.com",
+    "Direccion": "Camellon el Rio",
+    "Telefono": 3103112233,
+    "contrasenia": "F2024d_E"
+  },
+  {
+    "nombreCompleto": "Liliana Coronado",
+    "correoElectronico": "lcoronado@usuarioprueba.com",
+    "Direccion": "Camellon el Hoyos",
+    "Telefono": 3104223344,
+    "contrasenia": "lC0301_JM"
+  }
+]
