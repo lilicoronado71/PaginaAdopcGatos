@@ -31,7 +31,7 @@ const registroGaticosSchema = new mongoose.Schema({
     //faltan ítems
 }, { timestamps: true }); //Añadir timestamps para añadir fecha de creación (createdAt) y modificacipon (updatedAt)
 
-const regGaticos = mongoose.model('registroGatico', registroGaticosSchema);
+const regGaticos = mongoose.model('registroGatico', registroGaticosSchema, 'registroGaticos');
 
 //Rutas
 //Ruta GET para obtener todos los ítems de la colección
@@ -55,7 +55,7 @@ const registroUsuariosSchema = new mongoose.Schema({
 }, { timestamps: true }); //Añadir timestamps para añadir fecha de creación (createdAt) y modificacipon (updatedAt)
 
 
-const regUsuarios = mongoose.model('registroUsuario', registroUsuariosSchema);
+const regUsuarios = mongoose.model('registroUsuario', registroUsuariosSchema, 'registroUsuarios');
 
 //Ruta GET para obtener todos los ítems de la colección
 app.get('/api/obtenerRegistroUsuario', async (req, res) => {

@@ -193,23 +193,15 @@ btn_registro.addEventListener("click", event => {
         }
         console.log('nuevoUsuario' + nuevoUsuario);
 
-        fetch("cjson/registroUsuarios.json",{
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-              },
-            body: JSON.stringify(nuevoUsuario)
+        fetch('cjson/registroUsuarios.json')
+        .then(respuesta => respuesta.json()) //Se indica el formato en el que se muestra la información
+        .then(usuarios => {
 
-        })
-    // Converting to JSON
-    .then(response => response.json())
-
-    // Displaying results to console
-    .then(data => console.log(data))
-
-    .catch(error => console.error(error));
-   
+        });
     }
+    
+       
+    //.catch(error => console.error(error));
 
 })
 
