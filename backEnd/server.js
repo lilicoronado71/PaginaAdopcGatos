@@ -58,12 +58,42 @@ const registroUsuariosSchema = new mongoose.Schema({
 const regUsuarios = mongoose.model('registroUsuario', registroUsuariosSchema, 'registroUsuarios');
 
 //Ruta GET para obtener todos los ítems de la colección
-app.get('/api/obtenerRegistroUsuario', async (req, res) => {
+app.get('/api/registroUsuarios', async (req, res) => {
     try {
         const usuarios = await regUsuarios.find(); //buscar todas las raazas de gatos existentes
         res.status(200).json(usuarios);  //Responder con el registro de razas
     } catch (error) {
         res.status(500).json({ error: 'Error al obtener el registro de usuarios' });
+    }
+});
+
+//Ruta DELETE para eliminar un ítem de la colección
+app.delete('/api/registroUsuarios/:id', async (req, res) => {
+    try {
+        const usuarioEliminado = await regUsuarios.findByIdAndDelete(req.params.id); 
+        if(!usuarioEliminado){
+            return res.status(400).json({error: 'Usuario no encontrado'});
+        }
+        res.status(200).json({mensaje: 'Usuario eliminado con exito'});  
+    } catch (error) {
+        res.status(500).json({error: 'Error al obtener el registro de usuario'});
+    }
+});
+
+//Ruta POST para agregar un ítem de la colección
+app.post('/api/registroUsuarios', async (req, res) => {
+    try {
+        const nuevoUsuario = new regUsuarios({
+            nombreCompleto : req.body.nombreCompleto,
+            correoElectronico : req.body.correoElectronico,
+            Direccion : req.body.Direccion,
+            Telefono : req.body.Telefono,
+            contrasenia : req.body.contrasenia
+        }); 
+        const usuarioGuardado = await nuevoUsuario.save(); //Guarda nuevo registro en MongoDB
+        res.status(200).json(usuarioGuardado); //Responde con el producto guardado
+    } catch (error) {
+        res.status(400).json({error: 'Error al guardar el registro de usuario'});
     }
 });
 
