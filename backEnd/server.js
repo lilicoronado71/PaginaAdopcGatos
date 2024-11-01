@@ -43,7 +43,7 @@ app.get('/api/obtenerRegistroGatico', async (req, res) => {
         res.status(500).json({ error: 'Error al obtener el registro de gatos' });
     }
 });
-
+/*******************************CRUD REGISTRO DE USUARIOS vs BD MONGO***********************/
 //Definir el esquema y modelo de Mongoose para el registro de usuarios
 const registroUsuariosSchema = new mongoose.Schema({
     nombreCompleto: { type: String, required: true },
@@ -57,7 +57,7 @@ const registroUsuariosSchema = new mongoose.Schema({
 
 const regUsuarios = mongoose.model('registroUsuario', registroUsuariosSchema, 'registroUsuarios');
 
-//Ruta GET para obtener todos los ítems de la colección
+//Ruta GET para OBTENER o CONSULTAR todos los ítems de la colección
 app.get('/api/registroUsuarios', async (req, res) => {
     try {
         const usuarios = await regUsuarios.find(); //buscar todas las raazas de gatos existentes
@@ -67,7 +67,7 @@ app.get('/api/registroUsuarios', async (req, res) => {
     }
 });
 
-//Ruta DELETE para eliminar un ítem de la colección
+//Ruta DELETE para ELIMINAR un ítem de la colección
 app.delete('/api/registroUsuarios/:id', async (req, res) => {
     try {
         const usuarioEliminado = await regUsuarios.findByIdAndDelete(req.params.id); 
@@ -80,7 +80,7 @@ app.delete('/api/registroUsuarios/:id', async (req, res) => {
     }
 });
 
-//Ruta POST para agregar un ítem de la colección
+//Ruta POST para INSERTAR un ítem de la colección
 app.post('/api/registroUsuarios', async (req, res) => {
     try {
         const nuevoUsuario = new regUsuarios({
@@ -94,6 +94,34 @@ app.post('/api/registroUsuarios', async (req, res) => {
         res.status(200).json(usuarioGuardado); //Responde con el producto guardado
     } catch (error) {
         res.status(400).json({error: 'Error al guardar el registro de usuario'});
+    }
+});
+
+//Ruta GET para BUSCAR UN USUARIO un ítem de la colección
+app.get('/api/registroUsuarios/:id', async (req, res) => {
+    try {
+        const usuarioBuscado = await regUsuarios.findById(req.params.id); 
+        if(!usuarioBuscado){
+            return res.status(400).json({error: 'Usuario no encontrado'});
+        }
+        res.status(200).json(usuarioBuscado);  
+    } catch (error) {
+        res.status(500).json({error: 'Error al obtener el registro de usuario'});
+    }
+});
+
+//Ruta PUT para ACTUALIZAR UN USUARIO un ítem de la colección
+app.put('/api/registroUsuarios/:id', async (req, res) => {
+    try {
+        const usuarioBuscado = await regUsuarios.findById(req.params.id);
+        const {nombreCompleto, correoElectronico, Direccion, Telefono, contrasenia} = req.body;
+        if(!usuarioBuscado){
+            return res.status(400).json({error: 'Usuario no encontrado'});
+        }
+        const usuarioActualizado = await regUsuarios.updateOne({_id:req.params.id}, {$set:{nombreCompleto, correoElectronico, Direccion, Telefono, contrasenia}});
+        res.status(200).json(usuarioActualizado);  
+    } catch (error) {
+        res.status(500).json({error: 'Error al actualizar el registro'});
     }
 });
 
